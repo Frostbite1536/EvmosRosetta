@@ -29,29 +29,30 @@ The main function of the script runs in a loop, checking for new pinned posts ev
 ## Usage
 
 1. To start the bot, run the following command:
-
+```bash
 python EvmosRosetta.py --subreddit <subreddit_name>
+```
 
-Replace <subreddit_name> with the name of the subreddit you want to monitor for pinned posts.
+Replace `<subreddit_name>` with the name of the subreddit you want to monitor for pinned posts.
 
-2. Alternatively, you can use the provided start_bot.sh (for Linux) or start_bot.bat (for Windows) file to start the bot. Update the <subreddit_name> in the start_bot.sh or start_bot.bat file with the desired subreddit name.
+2. Alternatively, you can use the provided `start_bot.sh` (for Linux) or `start_bot.bat` (for Windows) file to start the bot. Update the `<subreddit_name>` in the `start_bot.sh` or `start_bot.bat` file with the desired subreddit name.
 
 ### For Linux:
 
-Give the start_bot.sh file executable permissions by running:
-
+Give the `start_bot.sh` file executable permissions by running:
+```bash
 chmod +x start_bot.sh
-
+```
 Then start the bot by running:
-
+```bash
 ./start_bot.sh
-
+```
 ### For Windows:
 
 Double-click the start_bot.bat file, or open a Command Prompt window, navigate to the directory containing the start_bot.bat file, and run:
-
+```bash
 start_bot.bat
-
+```
 ## Contributing
 We invite users to contribute and enhance the project. Here are some suggestions to improve or modify the script:
 

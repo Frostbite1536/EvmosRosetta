@@ -88,7 +88,7 @@ Adding support for other social channels like Twitter and Discord would extend t
 - **Error handling and logging:** Add error handling and logging for each social channel integration to ensure the bot runs smoothly and provides useful information in case of issues.
 - **Unit tests:** Add unit tests for each social channel integration to verify that the bot functions correctly and can handle various situations and edge cases.
 
-By implementing these features, you can make the bot more versatile and useful for a broader audience, catering to their specific preferences and needs for content consumption and sharing on different platforms.
+By implementing these features, EvmosRosetta will become more versatile and useful for a broader audience, catering to their specific preferences and needs for content consumption and sharing on different platforms.
 
 ## License
 This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).

@@ -1,5 +1,5 @@
 # EvmosRosetta
-###Translate Reddit posts and re-post on Telegram
+Translate Reddit posts and re-post on Telegram
 
 This repository contains a Python script for a Telegram bot that monitors a specified subreddit for pinned posts, translates them into multiple languages using OpenAI's GPT-3 and DeepL API, and sends the translated content to corresponding Telegram channels.
 

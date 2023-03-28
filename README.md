@@ -11,10 +11,18 @@ This repository contains a Python script for a Telegram bot that monitors a spec
 - Supports error handling and logging
 
 ## Libraries and API Integrations
-- PRAW (Python Reddit API Wrapper) for interacting with the Reddit API
-- Telebot (pyTelegramBotAPI) for interacting with the Telegram Bot API
-- OpenAI for interacting with GPT-3 models
-- Requests for interacting with the DeepL API
+- **PRAW** (Python Reddit API Wrapper): 
+  Allows the bot to access and extract information from the specified subreddit. For more information on usage, please visit [PRAW Documentation](https://praw.readthedocs.io/).
+
+- **Telebot** (pyTelegramBotAPI): 
+  Facilitates interactions with the Telegram Bot API for sending messages and handling bot commands. For more information, please visit the [pyTelegramBotAPI GitHub repository](https://github.com/eternnoir/pyTelegramBotAPI).
+
+- **OpenAI** for interacting with GPT-3 models: 
+  This project uses the OpenAI API for GPT-3 translations, refining translations, and language-specific prompts. For more information on usage and terms of service, please visit [OpenAI API Documentation](https://beta.openai.com/docs/).
+
+- **Requests** for interacting with the DeepL API: 
+  This library enables sending HTTP requests to the DeepL API for obtaining translations. For more information on usage, please visit [Requests Documentation](https://docs.python-requests.org/) and the [DeepL API Documentation](https://www.deepl.com/en/docs-api/).
+
 
 ## Setup
 1. Install the required Python libraries using the following command:

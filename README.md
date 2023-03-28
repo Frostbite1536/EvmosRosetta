@@ -6,7 +6,7 @@ This repository contains a Python script for a Telegram bot that monitors a spec
 ## Features
 - Monitors a specified subreddit for new pinned posts
 - Translates pinned posts into multiple languages using GPT-3 or DeepL API, depending on the specified translation method for each language
-- Refines translations using GPT-3, if needed
+- Refines translations using GPT-3, if desired
 - Sends translated posts to Telegram channels in different languages
 - Supports error handling and logging
 

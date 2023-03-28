@@ -77,16 +77,16 @@ Fork the repository, make improvements, and submit pull requests. Your contribut
 
 ## Extending Functionality
 ### Support for Other Social Channels
-Adding support for other social channels like Twitter and Discord is an excellent idea to extend the functionality of the bot. Below are some suggestions on how to implement this feature:
+Adding support for other social channels like Twitter and Discord would extend the functionality of EvmosRosetta. Below are some goals to extend functionality:
 
-- Twitter integration using Tweepy library
-- Discord integration using Discord.py library
-- Modularize social channel support
-- Configuration for social channels
-- Support for cross-posting
-- Rate limiting and API usage optimization
-- Error handling and logging
-- Unit tests
+- **Twitter integration using Tweepy library:** Use the Tweepy library to interact with the Twitter API. You can create functions to post translated content as tweets or threads on a Twitter account. For example, you could use `tweepy.API.update_status()` for posting tweets and `tweepy.API.update_status()` with the `in_reply_to_status_id parameter` for creating threads. 
+- **Discord integration using Discord.py library:** Use the `Discord.py` library to interact with the Discord API. You can create a Discord bot that posts translated content to specific channels in a Discord server. For example, you could use `discord.TextChannel.send()` for posting messages.
+- **Modularize social channel support:** Refactor the code to abstract the social channel interactions into separate classes or modules. This will make it easier to add or modify support for different social channels in the future.
+- **Configuration for social channels:** Update the configuration file and command-line arguments to allow users to specify which social channels to pull from and post to. You can use the configparser library to manage the configuration for each social channel.
+- **Support for cross-posting:** Implement cross-posting functionality, allowing the bot to pull content from one social channel and post it to another. For example, you can pull content from Reddit and post it to both Telegram and Twitter.
+- **Rate limiting and API usage optimization:** Different social channels have different rate limits and usage restrictions. Ensure that the bot respects these limits by implementing rate limiting and optimizing API calls.
+- **Error handling and logging:** Add error handling and logging for each social channel integration to ensure the bot runs smoothly and provides useful information in case of issues.
+- **Unit tests:** Add unit tests for each social channel integration to verify that the bot functions correctly and can handle various situations and edge cases.
 
 By implementing these features, you can make the bot more versatile and useful for a broader audience, catering to their specific preferences and needs for content consumption and sharing on different platforms.
 

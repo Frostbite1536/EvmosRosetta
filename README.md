@@ -25,25 +25,25 @@ This repository contains a Python script for a Telegram bot that monitors a spec
 
 
 ## Setup
-1. Install the required Python libraries using the following command:
+**1.** Install the required Python libraries using the following command:
     ```bash
     pip install praw openai pytelegrambotapi requests numpy configparser
     ```
-2. Create a `config.ini` file with the required API credentials for Reddit, Telegram, OpenAI, and DeepL. Use the provided `config.ini.example` as a template.
-3. Update the `translation_methods.txt` file with the desired language codes, translation methods, translation/refinement prompts, and Telegram chat IDs for each language.
+**2.** Create a `config.ini` file with the required API credentials for Reddit, Telegram, OpenAI, and DeepL. Use the provided `config.ini.example` as a template.
+**3.** Update the `translation_methods.txt` file with the desired language codes, translation methods, translation/refinement prompts, and Telegram chat IDs for each language.
 
 The main function of the script runs in a loop, checking for new pinned posts every 5 minutes (configurable) and translating them if not already processed. The script also starts a Telebot instance for polling and responding to Telegram bot commands, like `/start` for retrieving the chat ID.
 
 ## Usage
 
-1. To start the bot, run the following command:
+**1.** To start the bot, run the following command:
 ```bash
 python EvmosRosetta.py --subreddit <subreddit_name>
 ```
 
 Replace `<subreddit_name>` with the name of the subreddit you want to monitor for pinned posts.
 
-2. Alternatively, you can use the provided `start_bot.sh` (for Linux) or `start_bot.bat` (for Windows) file to start the bot. Update the `<subreddit_name>` in the `start_bot.sh` or `start_bot.bat` file with the desired subreddit name.
+**2.** Alternatively, you can use the provided `start_bot.sh` (for Linux) or `start_bot.bat` (for Windows) file to start the bot. Update the `<subreddit_name>` in the `start_bot.sh` or `start_bot.bat` file with the desired subreddit name.
 
 ### For Linux:
 

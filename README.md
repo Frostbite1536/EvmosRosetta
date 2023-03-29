@@ -65,19 +65,32 @@ start_bot.bat
 We invite users to contribute and enhance the project. Here are some suggestions to improve and extend the functionality of EvmosRosetta:
 
 - **Support more translation services:** Currently, the script supports GPT-3 and DeepL API for translation. You can add support for other translation services like Google Translate, Microsoft Translator, or Amazon Translate.
-- Configurable polling interval
-- Add more bot commands
+
+- **Configurable polling interval:** Allow users to configure the polling interval for checking new pinned posts in the subreddit through command-line arguments or a configuration file.
+
+- **Add more bot commands:** Implement additional commands for the Telegram bot, such as `/set_language` for users to select their preferred language, or `/set_subreddit` to change the monitored subreddit.
+
 - **Refactor code for better modularity:** Break down the main function into smaller functions to improve readability and maintainability. For example, create separate functions for handling each API integration, error handling, or translation steps.
   - **Modularize social channel support:** Refactor the code to abstract the social channel interactions into separate classes or modules. This will make it easier to add or modify support for different social channels in the future.
+
 - **Twitter integration using Tweepy library:** Use the Tweepy library to interact with the Twitter API. You can create functions to post translated content as tweets or threads on a Twitter account. For example, you could use `tweepy.API.update_status()` for posting tweets and `tweepy.API.update_status()` with the `in_reply_to_status_id parameter` for creating threads. 
+
 - **Discord integration using Discord.py library:** Use the `Discord.py` library to interact with the Discord API. You can create a Discord bot that posts translated content to specific channels in a Discord server. For example, you could use `discord.TextChannel.send()` for posting messages.
+
 - **Configuration for social channels:** Update the configuration file and command-line arguments to allow users to specify which social channels to pull from and post to. You can use the configparser library to manage the configuration for each social channel.
+
 - **Support for cross-posting:** Implement cross-posting functionality, allowing the bot to pull content from one social channel and post it to another. For example, you can pull content from Reddit and post it to both Telegram and Twitter.
+
 - **Implement a database for tracking sent posts:** Use a database (e.g., SQLite) to store the processed post IDs instead of a set in memory. This will help maintain a persistent record of sent posts across multiple runs of the script.
+
 - **Support for Markdown and rich text formatting:** Enhance the translation process to handle and preserve Markdown or rich text formatting in the original Reddit post.
+
 - **Automatic language detection:** Implement automatic language detection for the original posts using GPT-3 or external libraries like `langdetect`, so the script can better handle subreddits with posts in multiple languages.
+
 - **Error handling and logging:** Add error handling and logging for each social channel integration to ensure the bot runs smoothly and provides useful information in case of issues.
+
 - **Unit tests:** Add unit tests for each social channel integration to verify that the bot functions correctly and can handle various situations and edge cases.
+
 - **Rate limiting and API usage optimization:** Different social channels have different rate limits and usage restrictions. Ensure that the bot respects these limits by implementing rate limiting and optimizing API calls.
 
 By implementing these features, EvmosRosetta will become more versatile and useful for a broader audience, catering to their specific preferences and needs for content consumption and sharing on different platforms.
